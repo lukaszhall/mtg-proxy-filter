@@ -44,14 +44,10 @@ end
 def print_list(cards_list_map)
     cards_list_map.each {|key, value|
         print '%-30s' % key
-        value.each {|list|
-            print '%-25s' % list
-        }
+        value.each {|list| print '%-25s' % list}
         puts ""
     }
-   puts  
 end
-
 
 req_cards = read_req_cards
 wsg_lists = read_wsg_lists
